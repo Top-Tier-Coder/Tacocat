@@ -58,47 +58,33 @@
             </form> -->
         </div>
     </nav>
-    <h1>Check whether a number is a palindrome</h1>
-    <form id="form">
-        <input type="text" name="" id="number">
-        <input type="submit" value="check">
-    </form>
-    <p id="result"></p>
-    <script type="text/javascript">
-        var frm=document.getElementById("form");
-        frm.onsubmit=function(){
-            var user=document.getElementById("number").value;
-            var view=document.getElementById("result");
-            var store=user;
-            var rev=0;
-            while(store !=0){
-                rev=(rev*10)+(store%10);
-                store=parseInt(store/10);
-            }
-            if(user==rev){
-                result.innerHTML="This IS a Palindrome";
-                return false;
-            }
-            else{
-                result.innerHTML="This is NOT a Palindrome";
-                return false;
-            }
-            
-        }
+    
+       
 
-    </script>
-    <br>
-    <br>
+  
+    <h1>Check whether a word is a Palindrome</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <input class="" type="text" id="word">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <button class="btn btn-danger" id="btnWord">Is it a Palindrome?</button>
+            </div>
+        </div>
+    </div>
     <hr>
-    <br>
-    <br>
-       <!--      <h1>Check whether a word is a palindrome</h1>
-                <form id="form">
-                    <input type="text" name="" id="word">
-                    <input type="submit" value="check">
-                </form>
-                <p id="result"></p>
-
+    <div class="row">
+        <div class="col">
+            <p id="outResult"></p>
+        </div>
+    </div>
+        
+    
+    
+<!--       
 <script type="text/javascript">
         var frm=document.getElementById("form");
         frm.onsubmit=function(){
@@ -125,7 +111,13 @@
     </script> -->
     
     
-    
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="js/palindrome.js"></script>
+
 </body>
 </html>
 
