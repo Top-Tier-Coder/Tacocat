@@ -22,8 +22,42 @@
 
         }
     </style>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/custom.css">
 </head>
 <body>
+      <!-- Navigation Section -->
+      <nav class="navbar navbar-expand-sm navbar-dark" style="background-color: #ffa600">
+        <a class="navbar-brand" href="#">PalindromeTest <i class="fas fa-cart-plus    "></i></a>
+        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+            aria-expanded="false" aria-label="Toggle navigation"></button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+               
+                <li class="nav-item">
+                    <a class="nav-link" href="solve.html">Solve</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="code.html">Code</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Index</a>
+                </li>
+                <!-- <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownId">
+                        <a class="dropdown-item" href="#">Action 1</a>
+                        <a class="dropdown-item" href="#">Action 2</a>
+                    </div>
+                </li> -->
+            </ul>
+            <!-- <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form> -->
+        </div>
+    </nav>
     <h1>Check whether a number is a palindrome</h1>
     <form id="form">
         <input type="text" name="" id="number">
@@ -53,6 +87,45 @@
         }
 
     </script>
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
+       <!--      <h1>Check whether a word is a palindrome</h1>
+                <form id="form">
+                    <input type="text" name="" id="word">
+                    <input type="submit" value="check">
+                </form>
+                <p id="result"></p>
+
+<script type="text/javascript">
+        var frm=document.getElementById("form");
+        frm.onsubmit=function(){
+            var user=document.getElementById("string").value;
+            var view=document.getElementById("result");
+            var store=user;
+            var rev=0;
+            while(store !=0){
+                rev=(rev*10)+(store%10);
+                store=parseInt(store/10);
+            }
+            if(user==rev){
+                result.innerHTML="This IS a Palindrome";
+                return false;
+            }
+            else{
+                result.innerHTML="This is NOT a Palindrome";
+                return false;
+            }
+            
+        }
+                   
+
+    </script> -->
+    
+    
+    
 </body>
 </html>
 
