@@ -26,9 +26,7 @@
                 <li class="nav-item">
                     <a class="nav-link" href="code.html">Code</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="palindrome.html">PalindromeTest</a>
-                </li>
+            
                 <!-- <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
                     <div class="dropdown-menu" aria-labelledby="dropdownId">
@@ -48,57 +46,65 @@
     <div class="jumbotron jumbotron-fluid">
         <div class="container">
             <h1 class="display-3">Is This a Palindrome?</h1>
-            <p class="lead">Great Question</p>
+            <p class="lead">Ask and the TacoCat shall Answer</p>
             <hr class="my-2">
-            <p>More info</p>
+        
             <p class="lead">
                <!-- <a class="btn btn-primary btn-lg" href="Jumbo action link" role="button">Jumbo action name</a> -->
             </p>
         </div>
     </div>
 
-    <hr>
+   
 
      <!-- This is where I lay out the UI for the exercise -->
 
-     <div class="container">
-        <div class="row">
-            <!-- Column 1 is an input -->
-            <div class="col">
-                <input id="input1" type="text" class="form-control" placeholder="Enter number 1">
-            </div>           
+    
 
-            <!-- Column 2 is an input -->
-            <div class="col">
-                <input id="input2" type="text" class="form-control" placeholder="Enter word 1">
-            </div>           
-
-            <!-- Column 3 is a button
-                The button is what we will use to add an eventlistener....
-            -->
-            <div class="col">
-                <button id="btnDemo" class="btn btn-dark">Click me</button>
-            </div>           
-        </div>
-        <br>
-        <!-- Create a second row for the output -->
-        <div class="row">
-            <div class="col">
-                <p id="output1"></p>                
-            </div>
-            <div class="col">
-                <p id="output2"></p>                
-            </div>
-            
-        </div>
-    </div>
-
-    <br>
-    <hr>
     <br>
     
-    <!-- Now I am just going to have a single button to click -->
     <div class="container">
+        <div class="col-9 offset-1">  
+        <h1>Enter Into The Space Below to Find Out</h1>
+    </div>
+        <div class="row">
+            <div class="col-10">
+                <input type="text" class="form-control" id=word>
+            </div>
+        </div>
+        <div class="row">
+            <div class=col-6>
+                <button class="btn btn-dark btn-lg" id="btnDemo2">Is it a Palindrome</button>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="row">
+        <div class=col-6>
+            <p id="outResult"></p>
+        </div>
+    </div>
+    
+    
+    
+    <!-- Now I am just going to have a single button to click -->
+    
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="js/palindrome.js"></script>
+
+
+</body>
+</html>
+
+
+
+    <!-- <div class="container">
         <div class="row">
             <div class="col">
                 <button class="btn btn-dark btn-lg" id="btnDemo2">Click Me To Perform the Loop!</button>
@@ -140,16 +146,40 @@
         </div>        
     </div>
 
+ -->
 
 
+ <!--   
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script src="js/custom.js"></script>
+ <div class="container">
+    <div class="row">
+      Column 1 is an input 
+        <div class="col">
+            <input id="input1" type="text" class="form-control" placeholder="Enter number 1">
+        </div>           
 
+      Column 2 is an input
+        <div class="col">
+            <input id="input2" type="text" class="form-control" placeholder="Enter word 1">
+        </div>           
 
-</body>
-</html>
+      Column 3 is a button
+            The button is what we will use to add an eventlistener....
+        
+        <div class="col">
+            <button id="btnDemo" class="btn btn-dark">Click me</button>
+        </div>           
+    </div>
+    <br>
+   
+       Create a second row for the output 
+     <div class="row"> 
+            <p id="output1"></p>                
+        </div>
+        <div class="col">
+            <p id="output2"></p>                
+        </div>
+        
+    </div>
+</div>
+           -->
